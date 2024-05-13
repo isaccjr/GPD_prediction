@@ -205,9 +205,12 @@ corruption that have low GDP per capita. In the second another interresting info
 in services area has a high correlation with GDP per capita than uneployment, and educational
 expenditure has amost no correlation with it.
 
-Fig. 1 Fig. 2
+Fig. 1
+<img src="Features Correlation - kaggle.png" alt="Features Correlation" width=300 height=300>
+Fig. 2 
+<img src="Features Correlation - UN data.png" alt="Feature Correlation - UN DATA" width=300 height=300>
 
-Fig. 3
+Fig. 3 <img src="Features Correlation - heritage hue.png" alt="Features Correlation - Heritage Foundation">
 
 
 ### Algorithms and Techniques
@@ -296,8 +299,10 @@ multiples runs be almost the same, and that is actually done.
 
 
 Fig. 4
+<img src="models comparative - mape.png">
 
 Fig. 5
+<img src="models comparative - rmspe.png">
 
 For the tuning of the hyper-parameters was used grid search, the scikit learn
 GridSearchCV. A small subset of these parameters can make a huge improvement on predictive or
@@ -320,15 +325,20 @@ number of features, more depth in decision trees models can cause over fitting a
 act poorly in the test set.
 
 The features importance in this model is shown below:
+<div float="center">
+  Fig. 8  
+  <img src="Features Importance - features only.png"style="width: 350px; height: 700px;" >
+  Fig. 9  
+  <img src="Features Importance.png" style="width: 350px; height: 700px;"  />
+</div>
 
 Bars in red are not actual features are groups of features made to have idea of how
 much the freedom index is important in the model. In the fig. 8 there is the tree used by the model
 the fig. 9 is a zoom in part of it.
 
-Fig. 8
+ <img src="tree.png"/>
+ <img src="zoom tree.png"/>
 
-
-Fig. 9
 
 ### Refinement
 
@@ -403,6 +413,7 @@ really bad. A neural net may give a better
 application were minor change cause change in the output of the model and with that the user can
 understand better GPD per capita and which feature has to be improved to give maximum output (see
 the Improvement section)
+<img src="error distribution.png">
 
 ## Conclusion
 
@@ -430,7 +441,7 @@ get stuck, the initial branch of the tree can be
 seen in fig. 12
 
 Fig. 12
-
+<img src="tree - firsts branch.png"/>
 
 ### Reflection
 
